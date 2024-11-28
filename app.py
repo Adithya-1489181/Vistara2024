@@ -102,7 +102,7 @@ def submit():
 if __name__ == '__main__':
     # Start the winner selection using APScheduler
     scheduler = BackgroundScheduler()
-    scheduler.add_job(select_winner, 'interval', seconds=45)  # Change the interval here
+    scheduler.add_job(select_winner, 'interval', hours=2)  # Change the interval here
     scheduler.start()
 
     app.run(debug=True)
