@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Draw</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>ARE YOU LUCKY!!!</h1>
+        <div class="Form">
+            <form action="/submit" method="POST">
+                <label for="student_name">Student Name:</label>
+                <input type="text" id="student_name" name="student_name" required><br><br>
+
+                <label for="college_name">College Name:</label>
+                <input type="text" id="college_name" name="college_name" required><br><br>
+
+                <label for="contact_no">Contact No:</label>
+                <input type="text" id="contact_no" name="contact_no" required><br><br>
+
+                <button type="submit"><b>Enter Data</b></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
